@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledTitleBox = styled.div`
   padding-top: 100px;
-  width: 75%;
+  width: 90%;
 `;
 
 export const Container = styled.div`
