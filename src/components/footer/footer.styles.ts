@@ -59,9 +59,11 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const Scissors = styled.img`
+export const Scissors = styled.div`
   position: relative;
-  top: 21px;
+  top: 18px;
+  height: 32px;
+  width: 40px;
 
   @keyframes animate {
     from {

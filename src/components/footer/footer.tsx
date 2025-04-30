@@ -1,4 +1,5 @@
 import React from "react";
+import Lottie from 'react-lottie';
 import { TextComponent } from "..";
 import { TextType } from "../../types/text";
 import {
@@ -11,8 +12,8 @@ import {
   ProjectContainer,
   PartyIcon,
 } from "./footer.styles";
-import ScissorsImage from "../../images/global/scissors.svg";
 import PartyImage from "../../images/global/animatedParty.svg";
+import * as scissorsAnimation from '../../images/global/scissors.json';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -22,6 +23,13 @@ const Footer = () => {
     });
   };
   const email = () => (window.location.href = "mailto:anddupell@gmail.com");
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: scissorsAnimation,
+    isClickToPauseDisabled: false,
+    style: { margin: 0 }
+  };
 
   const handleAnimation = () => {
     document.body.animate(
@@ -42,7 +50,9 @@ const Footer = () => {
 
   return (
     <>
-      <Scissors role="presentation" alt="" src={ScissorsImage} />
+      <Scissors>
+        <Lottie options={defaultOptions} height={32} width={40} />
+      </Scissors>
       <StyledFooter>
         <StyledBox>
           <StyledA onClick={scrollToTop}>

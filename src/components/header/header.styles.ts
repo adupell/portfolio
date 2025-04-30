@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { $gray } from "../../assets/colors";
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -17,7 +18,8 @@ export const StyledBox = styled.div`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  margin: 0 50px 0 0;
+  margin: 0 10px;
+  padding: 12px;
 
   @media screen and (max-width: 800px) {
     margin: 0 20px 0 0;
@@ -25,6 +27,8 @@ export const StyledLink = styled(Link)`
 
   &:hover {
     cursor: pointer;
+    border-radius: 6px;
+    background-color: ${$gray};
   }
 `;
 

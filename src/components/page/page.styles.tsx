@@ -5,7 +5,7 @@ export const StyledPage = styled.div`
   color: ${$white};
   display: flex;
   flex-direction: column;
-  padding: 10px 100px;
+  padding: 100px;
 
   animation: fadeInAnimation ease-in-out 1s;
   -webkit-animation: fadeInAnimation ease-in-out 1s;
