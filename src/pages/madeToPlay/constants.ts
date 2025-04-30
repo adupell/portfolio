@@ -94,7 +94,7 @@ export const sectionTen = [
     title: "city of boston",
     text: `At the end of the semester, we presented our final book to the East Boston Social Center and several people from the mayor’s office for childhood education. 
 
-    As of March 2023, we are continuing  to work with the city of Boston and the mayor to print and distribute our book citywide to families with young children. From this, we will collect more user feedback and further iterate on the book.`,
+    We have continued to work with the city of Boston through the Mayor's office to print and distribute our book citywide to families with young children. You can now find Made To Play in all Boston public libararies, as well as several social centers we worked with. The book is available in over 7 languages!`,
   },
   {
     title: "fast company",

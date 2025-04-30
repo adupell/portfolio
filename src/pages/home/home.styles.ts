@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 export const StyledTitleBox = styled.div`
-  padding: 25px 0;
+  padding-top: 100px;
+  width: 75%;
 `;
 
 export const Container = styled.div`
-  padding: 25px 175px;
+  display: flex;
+  flex-direction: column;
+  margin: 150px 0;
 
   @media screen and (max-width: 1000px) {
     padding: 10px 75px;
@@ -17,9 +20,16 @@ export const Container = styled.div`
 `;
 
 export const ProjectContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  padding-top: 50px;
+
+  @media screen and (max-width: 1000px) {
+    display: flex; 
+    flex-direction: column;
+    padding-top: 25px;
+  } 
 `;
 
 export const StyledArrow = styled.img`

@@ -3,7 +3,10 @@ import { $white } from "../../assets/colors";
 
 export const StyledPage = styled.div`
   color: ${$white};
-  padding: 50px 50px 100px 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px;
+
   animation: fadeInAnimation ease-in-out 1s;
   -webkit-animation: fadeInAnimation ease-in-out 1s;
   -moz-animation: fadeInAnimation ease-in-out 1s;

@@ -13,7 +13,7 @@ const Header = () => {
       </StyledLink>
       <StyledBox>
         <StyledLink to="/">
-          <TextComponent nav text="work" type={TextType.SUBTITLE} />
+          <TextComponent nav text="projects" type={TextType.SUBTITLE} />
         </StyledLink>
         <StyledLink to="/about">
           <TextComponent nav text="about" type={TextType.SUBTITLE} />

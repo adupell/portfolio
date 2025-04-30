@@ -24,15 +24,15 @@ const HomePage = () => {
         <StyledHand role="presentation" alt="" src={Hand} />
         <TextComponent
           type={TextType.SUBTITLE}
-          text="hello! my name is Amanda Dupell and i am"
+          text="hello! my name is amanda dupell, i am an"
         />
         <TextComponent
           type={TextType.HEADER}
-          text="a brooklyn-based developer and designer with a focus on user experiences"
+          text="experienced UI and UX designer and frontend developer"
         />
         <TextComponent
           type={TextType.SUBTITLE}
-          text="check out some of my work below!"
+          text="i'm passionate about creating beautiful and accessible digital experiences for all. check out some of my work below!"
         />
         <StyledArrow role="presentation" alt="" src={Arrow} />
       </StyledTitleBox>

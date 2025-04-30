@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 export const StyledNav = styled.nav`
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;  
   margin-top: 50px;
-  width: 100%;
-`;
+  `;
 
 export const StyledBox = styled.div`
   display: flex;

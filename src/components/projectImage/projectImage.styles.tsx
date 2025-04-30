@@ -9,10 +9,12 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   height: 250px;
-  width: 250px;
+  width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 24px;
 
   @media screen and (max-width: 1000px) {
     height: 150px;
@@ -39,7 +41,7 @@ export const StyledImage = styled.img`
   top: 0px;
   left: 0px;
   height: 250px;
-  width: 250px;
+  width: 260px;
   object-fit: cover;
 
   @media screen and (max-width: 1000px) {
