@@ -3,8 +3,11 @@ import { HalfImage, Section } from "../shared.styles";
 
 export const Container = styled(Section)`
   align-items: center;
+  justify-content: space-evenly;
   margin: 0;
-  margin-top: 100px;
 `;
 
-export const StyledProfile = styled(HalfImage)``;
+export const StyledProfile = styled(HalfImage)`
+  border-radius: 100%;
+  width: 25%;
+`;

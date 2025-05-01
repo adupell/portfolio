@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { $gray } from "../../assets/colors";
+import { $pink } from "../../assets/colors";
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -8,6 +8,10 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;  
   margin-top: 50px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 0 15px;
+  }
   `;
 
 export const StyledBox = styled.div`
@@ -21,14 +25,10 @@ export const StyledLink = styled(Link)`
   margin: 0 10px;
   padding: 12px;
 
-  @media screen and (max-width: 800px) {
-    margin: 0 20px 0 0;
-  }
-
   &:hover {
     cursor: pointer;
     border-radius: 6px;
-    background-color: ${$gray};
+    background-color: ${$pink};
   }
 `;
 
