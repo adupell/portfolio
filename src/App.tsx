@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
 import { Footer, Header } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AboutPage, HomePage, LetterboxdPage, MadeToPlayPage } from "./pages";
-import { $orange } from "./assets/colors";
 
 function App() {
   return (
