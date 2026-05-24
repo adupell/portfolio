@@ -13,6 +13,7 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
+    padding: 0;
     margin: 25px 0;
     align-items: center;
   }
@@ -28,7 +29,7 @@ export const TextContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 1000px) {
-    margin: 0 50px;
+    margin: 0 25px;
     text-align: center;
   }
 `;

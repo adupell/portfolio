@@ -6,11 +6,7 @@ import {
   TextComponent,
 } from "../../components";
 import { TextType } from "../../types/text";
-import {
-  Container,
-  ProjectContainer,
-  StyledTitleBox,
-} from "./home.styles";
+import { Container, ProjectContainer, StyledTitleBox } from "./home.styles";
 import { projectData } from "./constants";
 import { $orange } from "../../assets/colors";
 
@@ -29,7 +25,10 @@ const HomePage = () => {
       </StyledTitleBox>
       <Container>
         <AnimationSection>
-          <TextComponent type={TextType.SUBTITLE} text="Check out some of my work below:" />
+          <TextComponent
+            type={TextType.SUBTITLE}
+            text="Check out some of my work below:"
+          />
         </AnimationSection>
         <ProjectContainer>
           {projectData.map((item) => (

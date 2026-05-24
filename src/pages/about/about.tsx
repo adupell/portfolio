@@ -7,10 +7,10 @@ import { profileImageDesc } from "../../images/about/imagedescriptions";
 import { $white } from "../../assets/colors";
 
 const AboutPage = () => {
-    useEffect(() => {
-      document.body.style.backgroundColor = $white;
-    }, []);
-    
+  useEffect(() => {
+    document.body.style.backgroundColor = $white;
+  }, []);
+
   return (
     <Page>
       <Container>

@@ -11,10 +11,10 @@ export const StyledPage = styled.div<StyledPageProps>`
   flex-direction: column;
   padding: 100px;
 
-  animation: fadeInAnimation ease-in-out 1s;
-  -webkit-animation: fadeInAnimation ease-in-out 1s;
-  -moz-animation: fadeInAnimation ease-in-out 1s;
-  -o-animation: fadeInAnimation ease-in-out 1s;
+  animation: fadeInAnimation ease-in-out 2s;
+  -webkit-animation: fadeInAnimation ease-in-out 2s;
+  -moz-animation: fadeInAnimation ease-in-out 2s;
+  -o-animation: fadeInAnimation ease-in-out 2s;
 
   @keyframes fadeInAnimation {
     0% {

@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from 'react-lottie';
+import Lottie from "react-lottie";
 import { TextComponent } from "..";
 import { TextType } from "../../types/text";
 import {
@@ -13,7 +13,7 @@ import {
   PartyIcon,
 } from "./footer.styles";
 import PartyImage from "../../images/global/animatedParty.svg";
-import * as scissorsAnimation from '../../images/global/scissors.json';
+import * as scissorsAnimation from "../../images/global/scissors.json";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
     autoplay: true,
     animationData: scissorsAnimation,
     isClickToPauseDisabled: false,
-    style: { margin: 0 }
+    style: { margin: 0 },
   };
 
   const handleAnimation = () => {
@@ -44,7 +44,7 @@ const Footer = () => {
         ],
         easing: "linear",
       },
-      { duration: 3000, iterations: 2 }
+      { duration: 3000, iterations: 2 },
     );
   };
 
@@ -88,6 +88,10 @@ const Footer = () => {
           </StyledLink>
         </ProjectContainer>
       </StyledFooter>
+      <StyledText
+        type={TextType.PARAGRAPH}
+        text="This website was designed and built by me with ❤️ 2026"
+      />
     </>
   );
 };
