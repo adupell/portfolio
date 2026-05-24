@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Paragraph,
   Page,
   TextComponent,
   CoverImage,
-  AnimationSection,
 } from "../../components";
 import { TextType } from "../../types/text";
 import {
@@ -66,8 +65,13 @@ import {
   processImageDesc,
   usertestingImageDesc,
 } from "../../images/madeToPlay/imagedescriptions";
+import { $white } from "../../assets/colors";
 
 const MadeToPlayPage = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = $white;
+  }, []);
+
   return (
     <Page>
       <TextComponent
@@ -84,95 +88,70 @@ const MadeToPlayPage = () => {
         ))}
       </SectionOne>
       <CoverImage alt={madeToPlayCoverImageDesc} src={MadeToPlayCoverImage} />
-      <AnimationSection>
         <TextComponent
           type={TextType.SUBHEADER}
-          text="01 research and planning"
+          text="01 Research and Planning"
         />
         <SectionTwo>
           {sectionTwo.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
         </SectionTwo>
-      </AnimationSection>
-      <AnimationSection>
         <Gigamap alt={gigamapImageDesc} src={GigamapImage} />
-      </AnimationSection>
-      <AnimationSection>
         <ImageContainer>
           <Process alt={processImageDesc} src={ProcessImage} />
           <GuidedPlay alt={guidedPlayImageDesc} src={GuidedPlayImage} />
         </ImageContainer>
-      </AnimationSection>
-      <AnimationSection>
-        <TextComponent type={TextType.SUBHEADER} text="02 branding" />
+        <TextComponent type={TextType.SUBHEADER} text="02 Branding" />
         <SectionThree>
           {sectionThree.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
           <DesignSystem alt={designSystemImageDesc} src={DesignSystemImage} />
         </SectionThree>
-      </AnimationSection>
-      <AnimationSection>
         <SectionFour>
           {sectionFour.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
         </SectionFour>
-      </AnimationSection>
-      <AnimationSection>
         <Illustrations alt={illustrationsImageDesc} src={IllustrationsImage} />
-      </AnimationSection>
-      <AnimationSection>
         <SectionFive>
           {sectionFive.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
           <Photography alt={photographyImageDesc} src={PhotographyImage} />
         </SectionFive>
-      </AnimationSection>
-      <AnimationSection>
-        <TextComponent type={TextType.SUBHEADER} text="03 user testing" />
+        <TextComponent type={TextType.SUBHEADER} text="03 User Testing" />
         <SectionSix>
           {sectionSix.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
           <UserTesting alt={usertestingImageDesc} src={UserTestingImage} />
         </SectionSix>
-      </AnimationSection>
-      <AnimationSection>
         <SectionSeven>
           <Observation alt={observationsImageDesc} src={ObservationsImage} />
           {sectionSeven.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
         </SectionSeven>
-      </AnimationSection>
-      <AnimationSection>
         <SectionEight>
           {sectionEight.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
           <Changes alt={changesImageDesc} src={ChangesImage} />
         </SectionEight>
-      </AnimationSection>
-      <AnimationSection>
-        <TextComponent type={TextType.SUBHEADER} text="04 final designs" />
+        <TextComponent type={TextType.SUBHEADER} text="04 Final Designs" />
         <SectionNine>
           {sectionNine.map((item) => (
             <Paragraph text={item.text} />
           ))}
         </SectionNine>
-      </AnimationSection>
       <FinalDesignSection>
         {finalDesigns.map((item) => (
-          <AnimationSection>
             <FinalDesign src={item.src} alt={item.altText} />
-          </AnimationSection>
         ))}
       </FinalDesignSection>
-      <AnimationSection>
-        <TextComponent type={TextType.SUBHEADER} text="05 impact" />
+        <TextComponent type={TextType.SUBHEADER} text="05 Impact" />
         <SectionTen>
           {sectionTen.map((item) => (
             <Paragraph
@@ -183,7 +162,6 @@ const MadeToPlayPage = () => {
             />
           ))}
         </SectionTen>
-      </AnimationSection>
     </Page>
   );
 };

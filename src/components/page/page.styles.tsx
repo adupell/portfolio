@@ -1,8 +1,12 @@
 import styled from "styled-components";
-import { $white } from "../../assets/colors";
+import { $orange, $white } from "../../assets/colors";
 
-export const StyledPage = styled.div`
-  color: ${$white};
+interface StyledPageProps {
+  homepage?: boolean;
+}
+
+export const StyledPage = styled.div<StyledPageProps>`
+  ${({ homepage }) => homepage ? `background-color: ${$orange};` : `background-color: ${$white};`};
   display: flex;
   flex-direction: column;
   padding: 100px;

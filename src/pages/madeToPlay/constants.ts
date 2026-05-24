@@ -10,15 +10,15 @@ import FinalDesign9 from "../../images/madeToPlay/FinalDesign9.png";
 
 export const sectionOne = [
   {
-    title: "overview",
+    title: "Overview",
     text: `Made to Play is a developmental handbook that utilizes accessible, household items to create a series of easy-to-make DIY toys. For each toy, there is a corresponding “guided play” activity in the book that assists parents in monitoring their child’s development from 0 to 3 years old.`,
   },
   {
-    title: "goals",
+    title: "Goals",
     text: `Developmental screening is not always accessible to parents of young children. With our book, parents will be more educated and aware of the positive impacts of active parental monitoring, allowing for earlier intervention into their child’s development milestones. Specifically, our project focused on accessibility, education, and awareness.`,
   },
   {
-    title: "skills",
+    title: "Skills",
     text: `Branding
     User Research
     User Testing
@@ -28,7 +28,7 @@ export const sectionOne = [
 
 export const sectionTwo = [
   {
-    title: "early childhood development",
+    title: "Early Childhood Development Research",
     text: `Our team spent four months researching the early childhood development sector and gathering information on developmental milestones within the first three years of age. 
 
     This research guided our design decisions as we created a proof of concept for the Developmental Handbook that would become “Made to Play”. At the end of this semester, we met with the East Boston Social Center to receive feedback.`,
@@ -37,7 +37,7 @@ export const sectionTwo = [
 
 export const sectionThree = [
   {
-    title: "design system",
+    title: "Design System and Branding",
     text: `It was important to establish a system for the design elements in our book. From the feedback gathered from our first round of layout design, we explored other options, focusing on simple vectors and effective photography.
 
     Our final design system outlines page formatting, typographical rules, color palette, pattern usage, as well as the tone and voice of our language.`,
@@ -46,14 +46,14 @@ export const sectionThree = [
 
 export const sectionFour = [
   {
-    title: "illustrations",
+    title: "Illustrations",
     text: `As a part of our instruction pages for building the toys, we chose to include visual illustrations that originated from the process of creating the toys ourselves. Using the real world process, we were able to create an easily understood system for parents.`,
   },
 ];
 
 export const sectionFive = [
   {
-    title: "photography",
+    title: "Photography",
     text: `We wanted photos of the toys that we made to be the cover of the toy instructions so parents could have a realistic image of what the final product would look like. 
 
     For our photography, we went with a white background so it would not be distracting from the toy. It also provided consistency across the variety in toys.`,
@@ -62,21 +62,21 @@ export const sectionFive = [
 
 export const sectionSix = [
   {
-    title: "template",
+    title: "Template",
     text: `For our user testing, we created a template with the format for a user testing session.`,
   },
 ];
 
 export const sectionSeven = [
   {
-    title: "observation",
+    title: "Observation",
     text: `While user testing, we were looking for feedback related to the language, illustrations, and process of making each toy to ensure an easy and logical flow. Our user testing sessions were recorded over Zoom with permission.`,
   },
 ];
 
 export const sectionEight = [
   {
-    title: "feedback and changes",
+    title: "Feedback and Changes",
     text: `Based on the feedback from user testing, we made a few small changes in the language and illustrations that went alongside the toy instructions. 
 
     The largest change came from feedback around our Rattle Bracelet. When conducting user testing, we found that a lot of the steps and pictures were not detailed enough. With more investigation, we determined that the toy was too confusing and needed to be scratched altogether. After further research, we found another toy that aligned with the targeted milestones that the Rattle Bracelet covered. We did a round of user testing with the new toy, ensuring it was easy to understand and make.`,
@@ -91,13 +91,13 @@ export const sectionNine = [
 
 export const sectionTen = [
   {
-    title: "city of boston",
+    title: "City of Boston Presentation and Distribution",
     text: `At the end of the semester, we presented our final book to the East Boston Social Center and several people from the mayor’s office for childhood education. 
 
     We have continued to work with the city of Boston through the Mayor's office to print and distribute our book citywide to families with young children. You can now find Made To Play in all Boston public libraries, as well as several social centers we worked with. The book is available in over 7 languages!`,
   },
   {
-    title: "fast company",
+    title: "Fast Company Magazine World Changing Idea Nominee",
     text: `As of May 2023, our project was honored as a nominee for the World Changing Idea for Education by Fast Company Magazine.
 
     As stated by the magazine, this sector focuses on “companies, organizations, or initiatives that help inspire better and more equitable learning”.`,
@@ -105,7 +105,7 @@ export const sectionTen = [
     linkText: "See more here",
   },
   {
-    title: "takeaways",
+    title: "Takeaways",
     text: `From the start of the fall semester semester (Fall 2021) to spring (Spring 2022), I learned a lot about the research and design process that goes into a large-scale project like this one. It was amazing to meet and work with the East Boston Social Center, as I feel like our design decisions are driven by a community that benefit from the product we made instead of a “personal project”. 
 
     Together, we researched, created a design system, user tested, and published a book. The experience was incredibly rewarding, and I am so proud of the final product!`,

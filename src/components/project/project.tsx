@@ -32,9 +32,9 @@ const Project = ({
       <Container className={className}>
         <ProjectImage alt={alt} src={src} color={color} />
         <TextContainer>
-          <StyledText type={TextType.TITLE} text={title} />
+          <StyledText bold type={TextType.TITLE} text={title} />
+          <StyledText type={TextType.PARAGRAPH} text={skills} />
           <StyledText type={TextType.PARAGRAPH} text={description} />
-          <StyledText bold type={TextType.PARAGRAPH} text={skills} />
         </TextContainer>
       </Container>
     </Link>

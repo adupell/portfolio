@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Paragraph,
   Page,
   TextComponent,
   CoverImage,
-  AnimationSection,
 } from "../../components";
 import { TextType } from "../../types/text";
 import {
@@ -62,8 +61,13 @@ import {
   signUpFlowImageDesc,
   homeFinalImageDesc,
 } from "../../images/letterboxd/imagedescriptions";
+import { $white } from "../../assets/colors";
 
 const LetterboxdPage = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = $white;
+  }, []);
+      
   return (
     <Page>
       <TextComponent
@@ -80,37 +84,28 @@ const LetterboxdPage = () => {
         ))}
       </SectionOne>
       <CoverImage alt={letterboxdCoverImageDesc} src={LetteboxdCoverImage} />
-      <AnimationSection>
         <TextComponent
           type={TextType.SUBHEADER}
-          text="01 existing brand and research"
+          text="01 Existing Brand and Research"
         />
-      </AnimationSection>
-      <AnimationSection>
         <SectionTwo>
           {sectionTwo.map((item) => (
             <Paragraph text={item.text} />
           ))}
           <HalfImage alt={exisitingBrandImage} src={ExisitingBrandImage} />
         </SectionTwo>
-      </AnimationSection>
-      <AnimationSection>
         <SectionThree>
           {sectionThree.map((item) => (
             <Paragraph size="large" header={item.header} text={item.text} />
           ))}
         </SectionThree>
-      </AnimationSection>
-      <AnimationSection>
         <SectionFour>
           <HalfImage alt={userFeedbackImageDesc} src={UserFeedbackImage} />
           {sectionFour.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
         </SectionFour>
-      </AnimationSection>
-      <AnimationSection>
-        <TextComponent type={TextType.SUBHEADER} text="02 strategy plan" />
+        <TextComponent type={TextType.SUBHEADER} text="02 Strategy Plan" />
         <SectionFive>
           {sectionFive.map((item) => (
             <Paragraph
@@ -120,62 +115,42 @@ const LetterboxdPage = () => {
             />
           ))}
         </SectionFive>
-      </AnimationSection>
       <SectionSix>
-        <AnimationSection>
           {sectionSix.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
-        </AnimationSection>
-        <AnimationSection>
           <FocusArea>
             <TextComponent type={TextType.TITLE} text={sectionSixText} />
           </FocusArea>
-        </AnimationSection>
       </SectionSix>
       <SectionSeven>
-        <AnimationSection>
           {sectionSeven.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
-        </AnimationSection>
       </SectionSeven>
       <ImageContainer>
-        <AnimationSection>
-          <TextComponent bold type={TextType.SUBTITLE} text="sign up" />
+          <TextComponent bold type={TextType.SUBTITLE} text="Sign up flow" />
           <SignUpFlow alt={signUpFlowImageDesc} src={SignUpFlowImage} />
-        </AnimationSection>
-        <AnimationSection>
-          <TextComponent bold type={TextType.SUBTITLE} text="homepage" />
+          <TextComponent bold type={TextType.SUBTITLE} text="Homepage flow" />
           <HomepageFlow alt={homepageFlowImageDesc} src={HomepageFlowImage} />
-        </AnimationSection>
       </ImageContainer>
-      <AnimationSection>
-        <TextComponent type={TextType.SUBHEADER} text="03 brainstorm" />
+        <TextComponent type={TextType.SUBHEADER} text="03 Brainstorm" />
         <SectionEight>
           {sectionEight.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
         </SectionEight>
-      </AnimationSection>
-      <AnimationSection>
         <SectionNine>
           {sectionNine.map((item) => (
             <Sketch alt={item.altText} src={item.src} />
           ))}
         </SectionNine>
-      </AnimationSection>
-      <AnimationSection>
         <SectionTen>
           {sectionTen.map((item) => (
             <Sketch alt={item.altText} src={item.src} />
           ))}
         </SectionTen>
-      </AnimationSection>
-      <AnimationSection>
-        <TextComponent type={TextType.SUBHEADER} text="04 final designs" />
-      </AnimationSection>
-      <AnimationSection>
+        <TextComponent type={TextType.SUBHEADER} text="04 Final Designs" />
         <SectionEleven>
           {sectionEleven.map((item) => (
             <Paragraph title={item.title} text={item.text} />
@@ -183,15 +158,11 @@ const LetterboxdPage = () => {
 
           <SignUpFinal alt={signUpFinalImageDesc} src={SignUpFinalImage} />
         </SectionEleven>
-      </AnimationSection>
-      <AnimationSection>
         <SectionTwelve>
           {sectionTwelve.map((item) => (
             <Paragraph title={item.title} text={item.text} />
           ))}
         </SectionTwelve>
-      </AnimationSection>
-      <AnimationSection>
         <SectionThirteen>
           <TextContainer>
             {sectionThirteen.map((item) => (
@@ -200,7 +171,6 @@ const LetterboxdPage = () => {
           </TextContainer>
           <HalfImage alt={homeFinalImageDesc} src={HomeFinalImage} />
         </SectionThirteen>
-      </AnimationSection>
     </Page>
   );
 };

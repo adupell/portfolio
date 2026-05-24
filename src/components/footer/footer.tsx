@@ -56,35 +56,35 @@ const Footer = () => {
       <StyledFooter>
         <StyledBox>
           <StyledA onClick={scrollToTop}>
-            <TextComponent type={TextType.SUBTITLE} text="back to top" />
+            <TextComponent type={TextType.SUBTITLE} text="Back to top" />
           </StyledA>
           <TextComponent type={TextType.SUBHEADER} text="Contact" />
           <StyledLink
             target="_blank"
             to="https://www.linkedin.com/in/amanda-dupell-profile/"
           >
-            <StyledText type={TextType.TITLE} text="linkedin" />
+            <StyledText type={TextType.TITLE} text="LinkedIn" />
           </StyledLink>
           <StyledLink target="_blank" to="https://github.com/amandadupell">
-            <StyledText type={TextType.TITLE} text="github" />
+            <StyledText type={TextType.TITLE} text="GitHub" />
           </StyledLink>
           <StyledA onClick={email}>
-            <StyledText type={TextType.TITLE} text="email" />
+            <StyledText type={TextType.TITLE} text="Email" />
           </StyledA>
           <StyledA onClick={handleAnimation}>
             <PartyIcon src={PartyImage} />
           </StyledA>
         </StyledBox>
         <ProjectContainer>
-          <StyledText type={TextType.TITLE} text="projects" />
+          <StyledText type={TextType.TITLE} text="Projects" />
           <StyledLink to="/made-to-play">
-            <StyledText type={TextType.PARAGRAPH} text="made to play" />
+            <StyledText type={TextType.PARAGRAPH} text="Made to Play" />
           </StyledLink>
           <StyledLink to="/letterboxd">
-            <StyledText type={TextType.PARAGRAPH} text="letterboxd" />
+            <StyledText type={TextType.PARAGRAPH} text="Letterboxd" />
           </StyledLink>
           <StyledLink target="_blank" to="https://amandadupell.surge.sh/">
-            <StyledText type={TextType.PARAGRAPH} text="personal portfolio" />
+            <StyledText type={TextType.PARAGRAPH} text="Personal Portfolio" />
           </StyledLink>
         </ProjectContainer>
       </StyledFooter>

@@ -13,16 +13,16 @@ const Header = () => {
       </StyledLink>
       <StyledBox>
         <StyledLink to="/">
-          <TextComponent nav text="projects" type={TextType.SUBTITLE} />
+          <TextComponent nav text="Projects" type={TextType.SUBTITLE} />
         </StyledLink>
         <StyledLink to="/about">
-          <TextComponent nav text="about" type={TextType.SUBTITLE} />
+          <TextComponent nav text="About" type={TextType.SUBTITLE} />
         </StyledLink>
         <StyledLink
           target="_blank"
           to="https://www.dropbox.com/s/qht5ne8wdr529lj/RESUME.pdf?dl=0"
         >
-          <TextComponent nav text="resume" type={TextType.SUBTITLE} />
+          <TextComponent nav text="Resume" type={TextType.SUBTITLE} />
         </StyledLink>
       </StyledBox>
     </StyledNav>

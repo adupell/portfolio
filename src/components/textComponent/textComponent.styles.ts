@@ -15,13 +15,13 @@ export const StyledText = styled.div<StyledTextProps>`
       switch (type) {
         case TextType.HEADER:
         case TextType.SUBHEADER:
-          return "700 1.75em 'Source Serif Pro', serif";
+          return "1.75em 'Source Serif Pro', serif";
         case TextType.TITLE:
-          return "700 1.25em Inter, sans serif";
+          return "1.25em 'Space Grotesk', sans-serif";
         case TextType.SUBTITLE:
-          return "1em Inter, sans serif";
+          return "1em 'Space Grotesk', sans-serif;";
         case TextType.PARAGRAPH:
-          return "0.8em Inter, sans serif";
+          return "0.8em 'Space Grotesk', sans-serif";
         default:
           return;
       }

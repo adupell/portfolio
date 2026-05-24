@@ -2,14 +2,15 @@ import React, { useEffect } from "react";
 import { StyledPage } from "./page.styles";
 
 interface PageProps {
+  homepage?: boolean;
   children: any;
   className?: any;
 }
 
-const Page = ({ children, className }: PageProps) => {
+const Page = ({ homepage, children, className }: PageProps) => {
   useEffect(() => window.scrollTo(0, 0), []);
 
-  return <StyledPage className={className}>{children}</StyledPage>;
+  return <StyledPage homepage={homepage} className={className}>{children}</StyledPage>;
 };
 
 export default Page;

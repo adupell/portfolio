@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const StyledTitleBox = styled.div`
-  padding-top: 100px;
-  width: 90%;
+  max-width: 1200px;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 150px 0;
 
   @media screen and (max-width: 1000px) {
     padding: 10px 75px;
@@ -85,8 +87,4 @@ export const StyledHand = styled.img`
   -webkit-animation: 2s ease-in-out spin 0s;
   -moz-animation: 2s ease-in-out spin 0s;
   -o-animation: 2s ease-in-out spin 0s;
-
-  &:hover {
-    animation: 2s ease-in-out spin 2s;
-  }
 `;

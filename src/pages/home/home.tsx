@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   AnimationSection,
   Page,
@@ -9,36 +9,27 @@ import { TextType } from "../../types/text";
 import {
   Container,
   ProjectContainer,
-  StyledArrow,
-  StyledHand,
   StyledTitleBox,
 } from "./home.styles";
-import Hand from "../../images/home/hand.svg";
-import Arrow from "../../images/home/arrow.svg";
 import { projectData } from "./constants";
+import { $orange } from "../../assets/colors";
 
 const HomePage = () => {
+  useEffect(() => {
+    document.body.style.backgroundColor = $orange;
+  }, []);
+
   return (
-    <Page>
+    <Page homepage>
       <StyledTitleBox>
-        <StyledHand role="presentation" alt="" src={Hand} />
-        <TextComponent
-          type={TextType.SUBTITLE}
-          text="hello! my name is amanda dupell, i am an"
-        />
         <TextComponent
           type={TextType.HEADER}
-          text="experienced UI and UX designer and frontend developer"
+          text="I am an experienced developer and designer with a love for accessibility, creativity, reading, and my cat, Frank."
         />
-        <TextComponent
-          type={TextType.SUBTITLE}
-          text="i'm passionate about creating beautiful and accessible digital experiences for all. check out some of my work below!"
-        />
-        <StyledArrow role="presentation" alt="" src={Arrow} />
       </StyledTitleBox>
       <Container>
         <AnimationSection>
-          <TextComponent type={TextType.SUBHEADER} text="projects" />
+          <TextComponent type={TextType.SUBTITLE} text="Check out some of my work below:" />
         </AnimationSection>
         <ProjectContainer>
           {projectData.map((item) => (

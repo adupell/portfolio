@@ -33,12 +33,8 @@ export const StyledLink = styled(Link)`
 `;
 
 export const StyledImage = styled.img`
-  width: 25%;
-  height: 50px;
-  width: 50px;
+  width: 100px;
 
   @media screen and (max-width: 800px) {
-    height: 30px;
-    width: 30px;
-  }
+    width: 50px;
 `;
